@@ -5,6 +5,7 @@ def choose_repeat(word, num)
     end
   else
     puts "Please enter a word, not a number."
+    break
   end
 end
 
