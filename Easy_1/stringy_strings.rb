@@ -10,22 +10,22 @@ require 'pry'
 
 
 def stringy(num)
-  ones_zeros = [1]
+  ones_zeros = []
   counter = 0
-  string_num = ''
-
+  
   loop do
-    ones_zeros[counter] == 1 ? ones_zeros << 0 : ones_zeros << 1
-    # binding.pry
-    if counter == num.size - 1
-      string_num = ones_zeros.join
-      break
-    else
-      counter += 1
+    if ones_zeros == []
+      ones_zeros << 1
     end
-    # string_num
+
+    ones_zeros[counter] == 1 ? ones_zeros << 0 : ones_zeros << 1
+    counter += 1
+    break if counter == num -1
   end
-  string_num
+  string_num = ones_zeros.join
 end
 
-p stringy(4)
+puts stringy(6) == '101010'
+puts stringy(9) == '101010101'
+puts stringy(4) == '1010'
+puts stringy(7) == '1010101'
