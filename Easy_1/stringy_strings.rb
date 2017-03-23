@@ -9,11 +9,12 @@ require 'pry'
 # build array, then join
 
 
-def stringy(num)
+def stringy(num = 1)
   ones_zeros = []
   counter = 0
   
   loop do
+    # break if num == 1
     if ones_zeros == []
       ones_zeros << 1
     end
