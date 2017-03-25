@@ -15,6 +15,7 @@ require 'pry'
 # end
 
 # further exploration:
+
 def sum(num)
   # num.to_s.chars.map! { |int| int.to_i }.reduce(:+)
   num.to_s.chars.map! { |int| int.to_i }.sum
