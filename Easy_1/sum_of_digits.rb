@@ -4,15 +4,15 @@
 
 require 'pry'
 
-# def sum(nums)
-#   add_able = nums.digits
-#   total = 0
+def sum(nums)
+  add_able = nums.digits
+  total = 0
 
-#   add_able.each do |number|
-#    total += number
-#   end
-#   total
-# end
+  add_able.each do |number|
+   total += number
+  end
+  total
+end
 
 # further exploration:
 
