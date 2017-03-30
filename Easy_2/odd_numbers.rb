@@ -6,3 +6,15 @@ require 'pry'
 # odd?
 
 nums_array = (1..99).to_a
+
+# nums_array.each do |integer|
+#   if integer.odd?
+#     puts integer
+#   end
+# end
+
+odds = nums_array.select do |integer|
+  integer.odd?
+end
+
+puts odds
